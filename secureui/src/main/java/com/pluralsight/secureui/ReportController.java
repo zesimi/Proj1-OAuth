@@ -25,6 +25,7 @@ public class ReportController {
 	@RequestMapping("/report")
 	public String loadReport(Model m) {
 		
+		// call downstream service
 		Flux<TollData> response = this.webClient.get()
 				.uri("http://localhost:8081/api/tolldata")
 				.retrieve()
