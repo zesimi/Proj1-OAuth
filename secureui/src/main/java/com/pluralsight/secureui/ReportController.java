@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.reactive.function.client.WebClient;
 
 import reactor.core.publisher.Flux;
@@ -35,5 +36,11 @@ public class ReportController {
 		
 		m.addAttribute("tolldata", tolldata);
 		return "report";
+	}
+	
+	@RequestMapping("/bzvz")
+	@ResponseBody
+	public String bzvz() {
+		return "bzvz";
 	}
 }

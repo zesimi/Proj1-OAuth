@@ -1,0 +1,7 @@
+On Windows, run:
+
+bin\kc.bat start-dev
+
+or
+
+bin\kc.bat start-dev --http-port=8180
