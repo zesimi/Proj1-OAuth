@@ -3,7 +3,7 @@
  
 - This service is setup as Client at KEYCLOAK: [it can have its own permissions, roles, users...].  
 - name: "toll-service". It has its own credentials (service account): clientId and Secret. 
-- scope: "reader" (because resourceserver1 expect an access token with scope claim: reader.....so in KEYCLOAK we need to enable at KEYCLOAK client's Client Scopes 'assigned default CLient Scopes'
+- scope: "reader" (because resourceserver1 expect an access token with scope claim: reader.....so in KEYCLOAK we need to enable at KEYCLOAK client's Client Scopes 'assigned default Client Scopes'
 		"toll-service" client is allowed to request "reader" scope (e.g. in application.properties).
 
 		- This service is not a web service registered in Keycloak as OAuth2 client(as secureui), but a RESTful service which is registered in KEYCLOAK as OAuth2 client.
